@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Splash Screen */
+#splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #004080;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 999;
+}
+
+#splash h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#splash p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+#splash button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #004080;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#splash button:hover {
+  background-color: #cce0ff;
+}
+
+/* Controls UI */
+#controls {
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  width: 300px;
+}
+
+#controls h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+#controls select,
+#controls input {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#controls button {
+  width: 100%;
+  padding: 10px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#controls button:hover {
+  background-color: #003060;
+}
+
+/* Mode Selector */
+#mode-selector {
+  position: absolute;
+  top: 268px;
+  left: 50px;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  width: fit-content;
+}
+
+#mode-selector p {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+#mode-selector .mode-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+#mode-selector .mode-buttons button {
+  padding: 6px 14px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+#mode-selector .mode-buttons button:hover {
+  border: 2px solid #004080;
+  color: #004080;
+  background-color: #f0f8ff;
+}
+
+/* Directions Panel */
+#directions-panel {
+  position: absolute;
+  bottom: 80px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 300px;
+  z-index: 10;
+}
+
+#directions-panel h3 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+
+/* ETA Bar */
+#eta-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #004080;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
+  z-index: 9;
+}
+
+
+
+/* Map Styling */
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+/* Utility Class */
+.hidden {
+  display: none;
+}
+
+#end-navigation-btn {
+  display: none;
+  position: absolute;
+  bottom: 140px;
+  right: 20px;
+  z-index: 1000;
+  padding: 12px 16px;
+  background-color: #cc0000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+#end-navigation-btn:hover {
+  background-color: #a80000;
+}
+
